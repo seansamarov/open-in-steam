@@ -1,0 +1,10 @@
+{
+  "name": "open-in-steam",
+  "version": "1.0.0",
+  "description": "A browser extension to open any page in the Steam client",
+  "main": "index.js",
+  "repository": "https://github.com/seansamarov/open-in-steam",
+  "author": "Sean <sean@ineptitech.com>",
+  "license": "GPL",
+  "private": true
+}
