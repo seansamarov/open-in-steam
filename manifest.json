@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Open in Steam",
+    "version": "0.0.1",
+
+    "description": "A browser extension to open any page in the Steam client",
+
+    "content_scripts": [
+        {
+            "matches": ["*://steamcommunity.com/*", "*://steampowered.com/*"],
+            "js": ["openInSteam.js"]
+        }
+    ],
+
+    "host_permissions": ["*://steamcommunity.com/*", "*://steampowered.com/*"]
+}
