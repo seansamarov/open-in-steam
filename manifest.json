@@ -5,21 +5,10 @@
 
     "description": "A browser extension to open any page in the Steam client",
 
-    "content_scripts": [
-        {
-            "matches": ["*://steamcommunity.com/*", "*://steampowered.com/*"],
-            "js": ["openInSteam.js"]
-        }
-    ],
 
     "background": {
-        "scripts": [ "openInSteam.js" ]
+        "scripts": [ "background.js" ]
     },
-
-    "permissions": [
-        "activeTab",
-        "tabs"
-    ],
 
     "browser_action": {
         "default_icon": "icons/steam_icon_64.png"
