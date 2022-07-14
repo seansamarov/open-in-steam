@@ -7,5 +7,9 @@ function openURLInSteam( url )
         url: STEAM_URI
     });
 }
-browser.tabs.query( { currentWindow: true } )
-    .then();
+browser.browserAction.onClicked.addListener( () =>
+{
+    console.log("Opening in Steam...");
+    browser.tabs.getCurrent()
+        .then( tab => { openURLInSteam( tab.url ); } );
+})

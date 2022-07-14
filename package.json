@@ -6,5 +6,8 @@
   "repository": "https://github.com/seansamarov/open-in-steam",
   "author": "Sean <sean@ineptitech.com>",
   "license": "GPL",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "web-ext": "^7.1.1"
+  }
 }

@@ -12,5 +12,16 @@
         }
     ],
 
-    "host_permissions": ["*://steamcommunity.com/*", "*://steampowered.com/*"]
+    "background": {
+        "scripts": [ "openInSteam.js" ]
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/steam_icon_64.png"
+    }
 }
